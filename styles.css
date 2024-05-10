@@ -1,0 +1,223 @@
+body{
+    margin: 0;
+    padding:0;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    width: auto;    
+}
+
+ol,ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+header{
+    background-color: palevioletred;
+    display: flex;
+    align-items: center;
+    justify-content: space-between    
+}
+
+header nav ul{
+    display: flex;
+    gap: 1.5em;
+    width: 100%;
+}
+
+header nav ul li{
+    line-height: 80px;
+    margin: 0 5px;
+    text-transform: uppercase;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    list-style: none;
+    color: black;
+    font-size: 18px;
+}
+
+header a i{
+    color: black;
+    padding: 10px;
+}
+
+header h1 a{
+    color: black;
+    padding: 20px;
+}
+
+.checkbtn{
+    font-size: 30px;
+    color: antiquewhite;
+    float: right;
+    line-height: 80px;
+    margin-right: 50px;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+.seccion-1{
+    background-color: pink;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+    text-align: center;
+}
+
+.seccion-2 img{
+    width: 100%;
+}
+
+.seccion-3{
+    display: flex;
+    background-color: crimson;
+    width: 100%;
+}
+.card-container{
+    width: 100%;
+    max-width: 1200px;
+    height: 430px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+}
+
+.card{
+    background-color: pink;
+}
+.card-container .card{
+    width: 330px;
+    height: 430px;
+    border-radius: 8px;
+    box-shadow: 0 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.25s;
+}
+
+.card-container .card:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-container .card img {
+    width: 330px;
+    height: 220px;
+}
+
+.card-container .card h4{
+    font-weight: 600;
+}
+
+.card-container .card p{
+    font-size: 16px;
+    font-weight: 300;
+    padding: 0 1 rem;
+}
+
+.card-container .card a{
+    font-weight: 500;
+    text-decoration: none ;
+    color: rebeccapurple;
+}
+
+footer{
+    background-color: palevioletred;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: justify;
+    clear: both;
+    padding: 25px;
+}
+
+.frase{
+    background-color: rebeccapurple;
+    text-align: center;
+} 
+
+/* Estilos para pantallas más pequeñas (hasta 768px) */
+@media (max-width: 768px){
+header{
+    background-color: crimson;
+    display: flex;    
+}
+
+header h1 a{
+    color: antiquewhite;
+    padding: 20px;
+}
+ 
+
+.checkbtn{
+    display: block;
+}
+
+ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: violet;
+    color: antiquewhite;
+    top: 80px;
+    left: 100%;
+    text-align: center;
+    flex-direction: column;
+    transition: all 0.5s;
+}
+
+nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+}
+
+nav ul li a{
+    font-size: 20px;
+}
+
+#check:checked ~ ul{
+    left: 0;
+}
+
+.acerca-de{
+    text-align: center;
+}
+
+.acerca-imagen{
+    margin-bottom: 40px;
+}
+
+h2 .fuente-acento{
+    text-align: center;
+}
+
+.seccion-1{
+    background-color: pink;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+    text-align: center;
+}
+
+.seccion-3{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: crimson;
+    width: 100%;
+}
+}
